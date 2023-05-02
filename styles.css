@@ -1,0 +1,28 @@
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.intro {
+    font-size: 18px;
+    color: #188974cf;
+    line-height: 1.5;
+  }
+  .parent li {
+    font-size: 16px;
+    color: #800f0f;
+  }
+  header>h1 {
+  color:rgb(0,0,255)
+  } 
+  input[type="head"]:focus {
+    border: 40px solid rgb(183, 255, 0);
+    outline: auto;
+  }
+
+  h3::first-letter {
+    color: rgb(183, 255, 0);
+  }
+  
+  h1 {
+    font-family: Arial, sans-serif; font-size: xx-large;
+  }
