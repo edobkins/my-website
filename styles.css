@@ -17,7 +17,18 @@ p {
   color: #800f0f;
   padding-bottom: 10px;
 }
+
 /*header */
+
+/*flex box*/
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 
 header>h1 {
   color: rgb(0, 0, 255)
@@ -44,7 +55,8 @@ h1 {
 
 img {
   border: 5px solid black;
-  max-width: 100%; /* scalable image */
+  max-width: 100%;
+  /* scalable image */
   max-height: auto;
 }
 
@@ -62,13 +74,17 @@ img {
   list-style-type: square;
   margin-left: 1.25em;
   margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column-reverse;
 }
+
 
 #nav_list ul li {
   width: 200px;
   margin-bottom: .5em;
   border: 5px solid black;
 }
+
 
 #nav_list ul li a {
   display: block;
@@ -77,3 +93,32 @@ img {
   font-weight: bold;
   color: #800f0f;
 }
+
+/* flex box for locations */
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #C8DFEE;
+  width: 150px;
+  margin: 0 15px 15px 0;
+  padding: 5px;
+  text-align: center;
+}
+
+
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(103, 103, 156, 1) 2%, rgba(0, 212, 255, 1) 100%);
+  42%,
+  rgba(219, 226, 226, 0) 100%);
+}
+
+/* breakpoints */
+@media (max-width: 700px)
