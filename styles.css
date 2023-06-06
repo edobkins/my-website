@@ -13,6 +13,11 @@ p {
 
 /*header */
 
+header {
+  width: 96.875%;
+  padding: 15px 1.5625%
+}
+
 /*flex box*/
 
 h1 {
@@ -87,7 +92,10 @@ footer {
 }
 
 body {
-  
+  width: 90%;  
+  max-width: 1024px;
+  margin: 0 auto;
+
 background: rgb(255,255,255);
 background: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(89,173,104,1) 70%, rgba(255,255,255,1) 100%);
 /* 42% , rgba(219, 226, 226, 0) 100%); */
