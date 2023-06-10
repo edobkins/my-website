@@ -1,7 +1,7 @@
 p {
   font-size: 125%;
   line-height: 1;
-  padding: 1%px;
+  padding: 1%;
 }
 
 .intro {
@@ -50,6 +50,7 @@ img {
 }
 
 /* NAV MEMU */
+
 #nav_list ul {
   list-style-type: none;
   display: flex;
@@ -84,12 +85,20 @@ li {
   text-align: center;
 }
 
+
+/* footer */
+
 footer {
   font-family: 'Monomaniac One', sans-serif;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 75%;
+  clear: both;
+  width: 96.875%;
+  padding: 1.5625%
 }
+
+/* body*/
 
 body {
   width: 90%;
@@ -99,4 +108,4 @@ body {
 }
 
 /* breakpoints */
-@media (max-width: 700px) @media only screen and (max-width: 600px) @media only screen and (min-width: 600px) @media only screen and (min-width: 768px) @media only screen and (min-width: 992px) @media only screen and (min-width: 1200px)
+@media (max-width: 500px)
