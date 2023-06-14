@@ -1,3 +1,13 @@
+/* body*/
+
+body {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(89, 173, 104, 1) 50%, rgba(255, 255, 255, 1) 100%);
+  padding: .5em;
+}
+
 p {
   font-size: 125%;
   line-height: 1;
@@ -18,8 +28,6 @@ header {
   padding: 15px 1.5625%
 }
 
-
-
 /*flex box*/
 
 h1 {
@@ -36,83 +44,92 @@ img {
   max-height: auto;
 }
 
-
-.nav_list a {
-  width: 49%;
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
 .column {
   float: left;
   width: 49%;
   display: flex;
   align-items: center;
-
+  justify-content: space-evenly;
 }
 
 /* NAV MEMU */
 
-#nav_list ul {
+#nav_list_1 ul {
   list-style-type: none;
   display: flex;
   flex-direction: column-reverse;
+  margin: auto;
 }
 
-
-#nav_list ul li {
-  width: 200px;
-  margin-bottom: .5em;
+#nav_list_1 ul li {
+  max-width: 80%;
+  margin: .5em;
   border: 5px solid black;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-#nav_list ul li a {
+#nav_list_1 ul li a {
   justify-content: center;
   display: block;
-  padding: .5em .5em .5em .5em;
+  padding: .7em;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #800f0f; 
+}
+
+#nav_list_2 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+}
+
+#nav_list_2 ul li {
+  max-width: 80%;
+  border: 5px solid black;
+  text-align: center;
+  margin: .5em;
+  background-color: #ffffff;
+}
+
+#nav_list_2 ul li a {
+  justify-content: center;
+  display: block;
+  padding: .7em;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
   color: #800f0f;
+  background-color: #ffffff;
 }
-
-
-/* flex box for locations */
-
-li {
-  background: #C8DFEE;
-  width: 150px;
-  margin: 0 15px 15px 0;
-  padding: 1%;
-  text-align: center;
-}
-
 
 /* footer */
 
 footer {
+  clear: both;
   font-family: 'Monomaniac One', sans-serif;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 75%;
-  clear: both;
   width: 96.875%;
   padding: 1.5625%
 }
 
-p{
+p {
   font-size: large ;
  }
-
-/* body*/
-
-body {
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-  background: linear-gradient(165deg, rgba(255, 255, 255, 1) 0%, rgba(89, 173, 104, 1) 70%, rgba(255, 255, 255, 1) 100%);
-  
-}
-
 /* breakpoints */
-@media (max-width: 500px)
+@media only screen and (max-width: 550px) {
+
+  .row {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: .5em;
+  }
+
+
+}
