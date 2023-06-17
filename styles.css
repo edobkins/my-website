@@ -9,13 +9,13 @@ body {
 }
 
 p {
-  font-size: 125%;
+  font-size: 150%;
   line-height: 1;
   padding: 1%;
 }
 
-.intro {
-  font-size: 150%;
+#intro {
+  text-size-adjust: 150%;
   width: 100%;
   color: #041814cf;
 
@@ -26,6 +26,33 @@ p {
 header {
   width: 96.875%;
   padding: 15px 1.5625%
+}
+
+#peru1 {
+  max-width: 380px;
+}
+
+#peru2 {
+  max-width: 380px;
+}
+
+#peru3 {
+  max-width: 380px;
+}
+
+#peru4 {
+  max-width: 380px;
+}
+
+.grid_contents {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: .5em;
+  grid-template-areas:
+    "peru1 peru2"
+    "peru3 peru4";
 }
 
 /*flex box*/
@@ -76,7 +103,7 @@ img {
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  color: #800f0f; 
+  color: #800f0f;
 }
 
 #nav_list_2 ul {
@@ -117,10 +144,16 @@ footer {
   padding: 1.5625%
 }
 
-p {
-  font-size: large ;
- }
 /* breakpoints */
+@media only screen and (max-width: 900px) {
+
+  .grid_contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 550px) {
 
   .row {
@@ -130,6 +163,5 @@ p {
     justify-items: center;
     padding: .5em;
   }
-
 
 }
